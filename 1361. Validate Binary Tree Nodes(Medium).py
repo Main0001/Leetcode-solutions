@@ -58,7 +58,7 @@ class Solution:
                 nodeQueue.put(rightChild[current])
                 visited[rightChild[current]] = True  # Mark right child as visited
 
-        # Check if there are multiple components
+        # Check if there are multiple components    
         for visit in visited:
             if not visit:
                 return False
